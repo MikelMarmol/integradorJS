@@ -1,0 +1,431 @@
+/* Tablet */
+@media(min-width:901px) and (max-width:1300px){
+  .imgizq{
+    width: 115%;
+  }
+  .content__text h1 {
+    font-size: 65px;
+    font-weight: 600;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+    /*login y register*/
+
+      .imgizq{
+        display: none;
+      }
+        .img{
+        display: none;
+      }
+      .container{
+        margin-right: 0px;
+      }
+        .form__container{
+          margin-left: 0px;
+        }
+        .content__text {
+          padding: 150px 15%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; 
+          align-items: left;
+          text-align: center;
+      }
+        .content__text h1 {
+          font-size: 65px;
+          font-weight: 600;
+        }
+        .content{
+          justify-content: normal;
+        }
+        .content__text__btns {
+          display: flex;
+          gap: 18px;
+          flex-direction: column;
+          padding-top: 0px;
+          margin-top: 50px;
+      }
+      
+      .btn--register {
+        background-color:  rgb(205, 22, 22);
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+      }
+      
+      .btn--login {
+        background-color:  #073a70;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+      }
+      
+      .container-background {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    
+  
+    /*header*/
+    .navbar {
+      gap: 10px;
+    }
+  
+    .cart-icon {
+      border: 0px solid;
+    }
+  
+    .navbar-list {
+      position: absolute;
+      top: 80px;
+      left: 5%;
+      right: 5%;
+      width: 90%;
+      flex-direction: column;
+      background-color: var(--nav-bg);
+      border: 2px solid var(--electric);
+      border-top: 0px;
+      border-radius: 0px 0px 15px 15px;
+      align-items: flex-start;
+      padding: 45px 30px;
+      gap: 25px;
+      z-index: 2;
+      display: none;
+    }
+  
+    .navbar-list a {
+      font-size: 18px;
+    }
+  
+    /* Mostramos el icono del menu */
+    .menu-label {
+      display: flex;
+      order: 2;
+      cursor: pointer;
+    }
+  
+    .menu-label img {
+      height: 50px;
+      width: 100px;
+    }
+  
+    .open-menu {
+      display: flex;
+    }
+  
+    /*Se van a superponer el cart y el menu si se abren juntos, eso lo solucionaremos en el modulo de js*/
+  
+    /*Hero*/
+  
+    .hero-info {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .hero-info h1 {
+      width: 90%;
+      max-width: 500px;
+      min-width: unset; /*Quitamos el min-width dado para desktop*/
+      font-size: 60px;
+    }
+  
+    .hero-info p {
+      width: 60%;
+      max-width: 600px;
+    }
+  
+    .hero-card {
+      display: none;
+    }
+  
+    /*info*/
+    #info h2 {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .info-cards-container {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .info-card{
+      display: flex;
+    }
+
+    .info{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    /* discover */
+    #discover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .discover-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .discover-cards {
+      flex-direction: column;
+    }
+  
+    .discover-cards img {
+      width: 100%;
+    }
+  
+    /* Products */
+    .categories {
+      flex-wrap: wrap;
+      max-width: 390px;
+    }
+  
+    .category {
+      width: 120px;
+    }
+
+    .container-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      flex-wrap: wrap;
+      position: relative;
+   }
+
+    .mapa{
+      width: 80%;
+      position: relative;
+    }
+    
+
+    .container-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+}
+  
+  @media (max-width: 675px) {
+
+    #form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      width: 70%;
+      margin: 20px 20px 0px 20px;
+      background-color: #02050e;
+      padding: 20px;
+      border-radius: 15px;
+      border: 2px solid white;
+      margin-bottom: 50px;
+    }
+
+    .form-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    }
+    
+  }
+
+
+  @media (max-width: 576px) {
+    /* Modificar el carrito para celu*/
+    .cart {
+      left: 0;
+      width: 100%;
+      border: none;
+    }
+  
+    .cart-item {
+      flex-wrap: wrap;
+    }
+  
+    /*Hero*/
+    .hero-info p {
+      width: 70%;
+      max-width: unset;
+    }
+  
+    /*Info*/
+    .info-card {
+      width: 100%;
+      height: 350px;
+      justify-content: center;
+    }
+  
+    .info-card p {
+      width: 90%;
+    }
+  
+    /* discover */
+    #discover {
+      width: 80%;
+    }
+  
+    #discover h2 {
+      font-size: 48px;
+      width: 100%;
+    }
+    
+    .hero-info h1 {
+      max-width: 500px;
+      min-width: unset; 
+      font-size: 45px;
+    }
+  
+
+    .discover-text {
+      width: 100%;
+      padding: 10px;
+      line-height: 30px;
+      gap: 50px;
+    }
+  
+    .discover-text a {
+      font-size: 20px;
+    }
+  
+    .discover-cards {
+      gap: 20px;
+    }
+  
+    .discover-cards img {
+      width: 100%;
+    }
+  
+    /* products */
+    .categories {
+      max-width: 300px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .category {
+      width: 120px;
+    }
+  
+    .products-container {
+      width: 80%;
+    }
+  
+    .product {
+      width: 100%;
+    }
+  
+    .product-info h3,
+    .product-info p,
+    .product-info span {
+      font-size: 14px;
+    }
+  
+    .product-user img {
+      height: 24px;
+    }
+
+    .text-contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      font-size: 20px;
+      margin-bottom: 150px;
+      margin-right: 0px;
+      color: white;
+    }
+
+    /*footer*/
+    .footer-links {
+      flex-direction: column;
+      text-align: center;
+    }
+    .info-cards-container {
+      max-width: 100%;
+    }
+    
+    .info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .cart {
+      min-width: unset;
+    }
+    .cart-container {
+      align-items: center;
+    }
+    .cart-item {
+      width: 70%;
+      justify-content: center;
+      gap: 20px;
+      flex-direction: column;
+    }
+    .item-info {
+      text-align: center;
+    }
+
+    .text-footer-information h3 {
+      font-size: 14px;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-top: 0px;
+    }
+    .info-cards-container {
+      max-width: 100%;
+    }
+    
+    .info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-data input {
+      display: flex;
+      width: 200px;
+      padding: 10px 20px;
+      background-color: #02050e;
+      border: 2px solid white;
+      border-radius: 15px;
+      outline: none;
+      margin: 5px;
+    }
+  }
