@@ -27,7 +27,7 @@ header {
 
 .navbar__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
   background: #171719;
@@ -43,6 +43,7 @@ header {
   gap: 10px;
   height: 100%;
   color: white;
+  position: absolute;
 }
 
 .navbar__logo {
@@ -60,7 +61,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
 }
 
 .container-background img {
@@ -78,7 +78,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: space-around;
   gap: 50px;
 }
 
@@ -90,14 +89,16 @@ main {
 
 .content__text h3 {
   margin-top: 20px;
+
 }
 
 .content__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
-  text-align: left;
+  align-items: center;
+  text-align: center;
+  margin: 50px;
 }
 
 .content__img {
@@ -109,6 +110,7 @@ main {
   gap: 30px;
   padding-top: 30px;
   margin-top: 50px;
+  width: 100%;
 }
 
 .btn {
@@ -164,16 +166,6 @@ footer {
   margin-top: 10px;
 }
 
-.text--gradient {
-  background: #12c2e9; /* fallback for old browsers */
-  background: -webkit-linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
-  background: linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  font-weight: 600;
-
-}
 .link-redirect {
   font-size: 16px;
   color: rgb(205, 22, 22);
@@ -200,19 +192,7 @@ footer {
   cursor: pointer;
 }
 
-#logout-message i {
-  background: #12c2e9; /* fallback for old browsers */
-  background: -webkit-linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
-  background: linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-}
 
-#logout-message i :hover {
-  background: -webkit-linear-gradient(135deg, #c149e9 0%, #2bc7d2 100%);
-  background: linear-gradient(135deg, #c149e9 0%, #2bc7d2 100%);
-}
 
 
 

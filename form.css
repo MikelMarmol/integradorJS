@@ -95,6 +95,29 @@ main {
       margin-left: 0px;
       padding-top: 40px;
     }
+  }
 
+  @media (max-width:450px) {
+    .form__submit__btn {
+      font-size: 0.9rem;
+      background-color: #073a70;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 250px;
+    }
+
+    .form__input {
+      padding: 15px 35px 15px 15px;
+      border-radius: 8px;
+      background-color: #252525;
+      color: #fff;
+      outline: none;
+      border: none;
+      width: 250px;
+      margin: 5px 0px;
+    }
   }
   

@@ -1,10 +1,12 @@
 //Contenedor de productos 
 const productsContainer = document.querySelector(".products-container");
 const showMoreBtn = document.querySelector(".btn-load");
+
 //El contenedor de categorías
 const categoriesContainer = document.querySelector(".categories");
-const categoriesList = document.querySelectorAll(".category")
+const categoriesList = document.querySelectorAll(".category");
 
+//carrito y menu hambuergesa
 const cartBtn = document.querySelector(".cart-label");
 const cartMenu = document.querySelector(".cart");
 const menuBtn = document.querySelector(".menu-label");
@@ -16,12 +18,14 @@ const successModal = document.querySelector(".add-modal");
 const buyBtn = document.querySelector(".btn-buy");
 const deleteBtn = document.querySelector(".btn-delete");
 const cartBubble = document.querySelector(".cart-bubble");
-const form = document.querySelector("#form")
-const nameInput = document.querySelector("#name-input")
-const lastNameInput = document.querySelector("#lastname-input")
-const mailInput = document.querySelector("#email-input")
-const textareaInput = document.querySelector("#textarea")
-const modalFormMsg = document.querySelector(".active-form-modal")
+
+//formulario de consulta
+const form = document.querySelector("#form");
+const nameInput = document.querySelector("#name-input");
+const lastNameInput = document.querySelector("#lastname-input");
+const mailInput = document.querySelector("#email-input");
+const textareaInput = document.querySelector("#textarea");
+const modalFormMsg = document.querySelector(".active-form-modal");
 
 //función para renderizar una lista de productos
 
@@ -447,6 +451,7 @@ completeCartAction(
 );
 };
 
+
 //funcion de validacion del form de contactos
 const consults = JSON.parse(localStorage.getItem("consults")) || []
 const saveConsultToLocalStorage = () => {
@@ -612,11 +617,13 @@ const init = () => {
     disableBtn(buyBtn);
     disableBtn(deleteBtn);
     renderCartBubble(cart);
-    form.addEventListener("submit", validateForm)
-    nameInput.addEventListener("input", () => checkTextInput(nameInput))
-    lastNameInput.addEventListener("input", () => checkTextInput(lastNameInput))
-    mailInput.addEventListener("input", () => checkEmail(mailInput))
-    textareaInput.addEventListener("input", () => checkTextArea(textareaInput))
+
+    
+    form.addEventListener("submit", validateForm);
+    nameInput.addEventListener("input", () => checkTextInput(nameInput));
+    lastNameInput.addEventListener("input", () => checkTextInput(lastNameInput));
+    mailInput.addEventListener("input", () => checkEmail(mailInput));
+    textareaInput.addEventListener("input", () => checkTextArea(textareaInput));
 };
 init();
 

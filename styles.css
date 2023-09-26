@@ -101,7 +101,7 @@ header {
   top: 80px;
   right: 0;
   padding: 50px 30px;
-  background-color: #050d26;
+  background-color: #02050e;
   border-left: 1px solid #0f1525;
   display: flex;
   flex-direction: column;
@@ -665,7 +665,6 @@ main {
   padding: 20px;
   border-radius: 15px;
   border: 2px solid white;
-  box-shadow: 10px 15px 5px rgba(255, 255, 255, 0.377);
   margin-bottom: 50px;
 }
 
@@ -730,14 +729,14 @@ main {
   border: 2px solid white;
 }
 
-.form-btn {
+.btn-form{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.form-btn {
+.btn-form {
   padding: 5px 15px;
   outline: none;
   background-color: #02050e;
@@ -751,7 +750,7 @@ main {
 
 }
 
-.form-btn:hover {
+.btn-form:hover {
   color: white;
   transform: scale(1.1);
   transition: all 0.2s ease;
@@ -792,9 +791,7 @@ main {
   border: 2px solid rgb(255, 52, 52);
 }
 
-/* .success-submit {
 
-} */
 
 /* CONTACTOS */
 
