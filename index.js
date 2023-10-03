@@ -25,7 +25,8 @@ const nameInput = document.querySelector("#name-input");
 const lastNameInput = document.querySelector("#lastname-input");
 const mailInput = document.querySelector("#email-input");
 const textareaInput = document.querySelector("#textarea");
-const modalFormMsg = document.querySelector(".active-form-modal");
+const modalFormMsg = document.querySelector(".active-form-modal"); 
+
 
 //función para renderizar una lista de productos
 
@@ -618,7 +619,7 @@ const init = () => {
     disableBtn(deleteBtn);
     renderCartBubble(cart);
 
-    
+
     form.addEventListener("submit", validateForm);
     nameInput.addEventListener("input", () => checkTextInput(nameInput));
     lastNameInput.addEventListener("input", () => checkTextInput(lastNameInput));
